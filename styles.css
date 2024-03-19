@@ -149,7 +149,7 @@ transition: all 400ms ease;
     }
 
 .banner_text{
-    width: 20%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -158,7 +158,7 @@ transition: all 400ms ease;
 
     }
     
-    .banner_T1{
+    .banner__T1{
      font-size: 5rem;
      color: var(--color2text);
      font-weight: lighter;
@@ -166,21 +166,21 @@ transition: all 400ms ease;
     
     }
     
-    .banner_T2{
+    .banner__T2{
     font-size: 4rem;
     color: var(--color2text);
     font-weight: lighter;
     }
 
-    .banner_T3{
+    .banner__T3{
         font-size: 4rem;
         color: var(--color2text);
         font-weight: bolder;
      }
 
-     .banner_btn{
+     .banner__btn{
         margin-top: 1rem;
-        width: 80%;
+        width: 50%;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -195,7 +195,7 @@ transition: all 400ms ease;
     transition: all 800ms ease;
     }
     
-    .banner_btn:hover{
+    .banner__btn:hover{
         transform: scale(1.1);  
         background: rgb(216,181,4);
     }
@@ -206,6 +206,9 @@ transition: all 400ms ease;
         display: flex;
         justify-content: center;
         align-items: end;
+        position: relative;
+        left: -7%;
+        z-index: 2;
         padding-bottom: 8%;
     }
 
@@ -228,7 +231,6 @@ transition: all 400ms ease;
         height: 2rem;
         border-radius: 50%;
         background-color: white;
-        transition: all 800ms ease;
         transition: all 400ms ease;
     }
 
@@ -240,12 +242,13 @@ transition: all 400ms ease;
 
     .sect_2{
         height: cal(100vh);
+        
     }
 
     .Personajes{
-        background: linear-gradient(0deg, rgba(155,17,17,1) 0%, rgba(92,1,1,1) 100%);;
+        background: linear-gradient(0deg, rgba(155,17,17,1) 0%, rgba(92,1,1,1) 100%);
         width: 100%;
-        height: 35vh;
+        height: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -261,12 +264,185 @@ transition: all 400ms ease;
 
     .Personajes__contenedor--H2{
         color: var(--color2text);
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: lighter;
         margin-bottom: 2rem;
     }
 
+        /* parte 2 */
 
+    .sagaPeliculas{
+        background: rgb(114, 12, 12);
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ele{
+        display: flex;
+        justify-content: center;
+        height: 120%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .ele__img{
+        display: flex;
+        justify-content: end;
+        width: 22%;
+        height: 62%;
+
+    }
+
+    .sagaPeliculas__ele--img2{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 22%;
+        height: 62%;
+    }
+
+
+    .ima{
+        padding: 2.5rem;
+        width: 50%;
+        height: 100%;
+        opacity: 20%;
+    }
+
+    .saga{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        flex-direction: column;
+    }
+
+    .saga__h2{
+        color: var(--color2text);
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .saga__lineaSaga{
+        margin-top: 5%;
+        height: 5px;
+        width: 40%;
+        background-color: var(--hover);
+        transition: all 400ms ease;
+    }
+
+    .saga__lineaSaga:hover{
+        height: 5px;
+        width: 70%;
+        background-color: var(--hover);
+    }
+
+    /* parte 3 */
+
+    .characters{
+        background: rgb(114, 12, 12);
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+       padding-bottom: 6rem;
+    }
+
+    .characters__cont{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img{
+        width: 30%;
+    }
+
+    .characters__cont--C1{
+        width: 100%;
+        height: 100%;
+       display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transition: all 400ms ease;
+    }
+
+    .characters__cont--C1:hover{
+        transform: scale(1.1);  
+    }
+
+    .control{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .characters__cont--C2{
+        width: 100%;
+        height: 100%;
+       display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transition: all 400ms ease;
+    }
+
+    .characters__cont--C2:hover{
+        transform: scale(1.1);  
+    }
+    
+    .characters__cont--C3{
+        width: 100%;
+        height: 100%;
+       display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transition: all 400ms ease;
+    }
+
+
+    .characters__cont--C3:hover{
+        transform: scale(1.1);  
+    }
+
+    .cuadrotxt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+background-color: rgb(106, 11, 11);
+width: 60%;
+height: 20%;
+border-radius: 0px 0px 60px 60px;
+box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.434) ;
+    }
+
+    .cuadrotxt__h2{
+        font-size: 2rem;
+        color: var(--color2text);
+    }
+
+    .cuadrotxt__p{
+        color: var(--color2text);
+        font-weight: lighter;
+    }
+
+    .img{
+        width: 60%;
+        transition: all 400ms ease;
+    }
 
 
     /* footer */
