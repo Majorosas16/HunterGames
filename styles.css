@@ -6,8 +6,10 @@
 
 :root{
 --color1: rgb(0, 0, 0);
+--background: linear-gradient(0deg, rgba(155,17,17,0) 0%, rgba(0,0,0,1) 62%);
 --color2: rgb(27, 26, 26);
 --hover: rgb(228, 156, 56);
+--hover3: #D6AE04;
 --hover2: rgb(203, 80, 31);
 --color2text: white;
 
@@ -23,15 +25,18 @@ body{
 /*sect_1*/
 .sect_1{
     height: cal(100vh);
+    position: relative;
 }
 
 /*Header*/
 .header{
 /* background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 52%); */
-background-color: var(--color1);
+background: linear-gradient(0deg, rgba(155,17,17,0) 0%, rgba(0,0,0,1) 62%);
 display: flex;
 width: 100%;
-height: 100px;
+height: 150px;
+position: absolute;
+z-index: 1;
 }
 
 .header__logo{
@@ -242,6 +247,7 @@ transition: all 400ms ease;
 
     .sect_2{
         height: cal(100vh);
+        position: relative;
         
     }
 
@@ -252,6 +258,9 @@ transition: all 400ms ease;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        z-index: 1;
+        border-radius: 0px 0px 100px 100px;
         /* border-radius: 0px 0px 300px 300px; */  
     }
 
@@ -274,7 +283,7 @@ transition: all 400ms ease;
     .sagaPeliculas{
         background: rgb(114, 12, 12);
         width: 100%;
-        height: 20vh;
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -282,6 +291,7 @@ transition: all 400ms ease;
     }
 
     .ele{
+        margin-top: 22rem;
         display: flex;
         justify-content: center;
         height: 120%;
@@ -292,12 +302,14 @@ transition: all 400ms ease;
     .ele__img{
         display: flex;
         justify-content: end;
+        align-items: center;
         width: 22%;
         height: 62%;
 
     }
 
     .sagaPeliculas__ele--img2{
+
         display: flex;
         justify-content: start;
         align-items: center;
@@ -309,7 +321,7 @@ transition: all 400ms ease;
     .ima{
         padding: 2.5rem;
         width: 50%;
-        height: 100%;
+        height: 40%;
         opacity: 20%;
     }
 
@@ -348,7 +360,7 @@ transition: all 400ms ease;
     .characters{
         background: rgb(114, 12, 12);
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: start;
@@ -356,6 +368,8 @@ transition: all 400ms ease;
     }
 
     .characters__cont{
+        margin-top: 1rem;
+
         display: flex;
         justify-content: center;
         align-items: start;
@@ -444,6 +458,166 @@ box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.434) ;
         transition: all 400ms ease;
     }
 
+        /*sect_3*/
+
+        .sect_3{
+            height: cal(100vh);
+            /* border: 10px solid var(--hover); */
+            position: relative;
+            
+        }
+        .btnEquipo{
+            position: absolute;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            background: linear-gradient(0deg, rgba(216,181,4,1) 0%, rgba(183,86,1,1) 100%);
+            color: white;
+            font-weight: lighter;
+            font-size: 3rem;
+        padding: 15px;
+        border-radius: 50px;
+        z-index: 1;
+        position: absolute;
+        left: 42%;
+        top: 237%;
+        transition: all 400ms ease;
+        }
+
+        .btnEquipo:hover{
+            transform: scale(1.1);
+            font-weight: bold;
+        }
+    
+    .Cont{
+        border-top: 10px solid var(--hover3);
+        background-image: url(recursos/majo.png);
+        background-repeat: no-repeat;
+        background-size: 1920px 1080px;
+        height: 100vh;
+        position: relative;
+
+    }
+
+    .Cont2{
+        border-bottom: 10px solid var(--hover3);
+        background-image: url(recursos/Silvi.png);
+        background-repeat: no-repeat;
+        background-size: 1920px 1080px;
+        height: 100vh;
+        position: relative;
+    }
+
+     .Cont__CajaTexto{
+        position: absolute;
+        width: 20%;
+        left: 50%;
+        top: 25%;
+     }
+
+     .Cont__CajaTexto2{
+        position: absolute;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+        top: 25%;
+        left: 28%;
+     }
+
+     .name{
+        width: 150%;
+        margin-bottom: 3rem;
+        transition: all 400ms ease;
+     }
+
+     .name:hover{
+        transform: scale(1.1);
+     }
+
+     .txt{
+        color: var(--color2text);
+        display: flex;
+        justify-content: end;
+        font-style:italic;
+        font-weight: normal;
+        font-size: 2rem;
+        width: 200%;
+        margin-bottom: 1.5rem;
+     }
+
+
+     .txt2{
+        color: var(--color2text);
+        display: flex;
+        justify-content: start;
+        font-style:italic;
+        font-weight: normal;
+        font-size: 2rem;
+        width: 200%;
+        margin-bottom: 1.5rem;
+     }
+
+     .p{
+        color: var(--color2text);
+        display: flex;
+        font-size: 1.4rem;   
+        width: 200%;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+     }
+
+     .redes1{
+        display: flex;
+        flex-direction: row;
+     }
+     .redes1 a{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 15%;
+        height: 50px;
+        color: white;
+        transition: all 400ms ease;
+        font-size: 3rem;
+    
+    }
+
+    .redes2{
+        display: flex;
+        flex-direction: row;
+        margin-right: 0.5rem;
+     }
+     .redes2 a{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        height: 50px;
+        color: white;
+        transition: all 400ms ease;
+        font-size: 3rem;
+    
+    }
+
+    .redes1 a:hover{
+        color: var(--hover);
+        transform: scale(1.2);
+    }
+
+    .redes2 a:hover{
+        color: var(--hover);
+        transform: scale(1.2);
+    }
 
     /* footer */
 
